@@ -1,0 +1,20 @@
+{# template fils #}
+
+{% extends "base.html.twig" %} {# extends permet de compléter le template père base.html.twig #}
+
+{% block title %}Quête Twig{% endblock %} {# permet de combler le block content dans base.html.twig #}
+
+{% block content %} {# permet de combler le block content dans base.html.twig #}
+    <h1>Product</h1>
+    <div class="row">
+        {% for product in products %}
+            <div class="card border-primary mb-3" style="max-width: 18rem; margin: 8%;" >
+                <div class="card-header">{{ product|upper}}</div> {# {{  }} permet d'afficher et le filter |upper met toutes les lettres en majuscules#}
+                <div class="card-body text-primary">
+                    <h5 class="card-title">Description du produit : {{ product }}</h5>
+                    <p class="card-text">Lorem ipsum</p>
+                </div>
+            </div>
+        {% endfor %}
+    </div>
+{% endblock %}

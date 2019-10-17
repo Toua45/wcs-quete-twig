@@ -1,0 +1,14 @@
+{
+    "name": "wilder/quete_twig",
+    "description": "quete twig",
+    "type": "twig/twig",
+    "authors": [
+        {
+            "name": "Toua VA",
+            "email": "toua.va45@gmail.com"
+        }
+    ],
+    "require": {
+	"twig/twig": "^2.12"
+	}
+}
